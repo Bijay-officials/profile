@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090914">
+  <meta name="description" content="Bijay — creative web developer building colorful digital experiences with HTML, CSS and JavaScript.">
+  <title>BIJAY — Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bijay home"><span class="brand-mark">B</span><span>BIJAY<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="nav-link active" href="#home" data-i18n="navHome">Home</a>
+      <a class="nav-link" href="#about" data-i18n="navAbout">About</a>
+      <a class="nav-link" href="#skills" data-i18n="navSkills">Skills</a>
+      <a class="nav-link" href="#ai" data-i18n="navAI">AI</a>
+      <a class="nav-link" href="#projects" data-i18n="navProjects">Projects</a>
+      <a class="nav-cta" href="#contact" data-i18n="navContact">Let’s talk <span>↗</span></a>
+      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">日本語</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> <span data-i18n="openTo">OPEN TO OPPORTUNITIES</span></div>
+        <p class="hello" data-i18n="hello">Hello, I'm</p>
+        <h1 id="heroName">BIJAY<span class="gradient-period">.</span></h1>
+        <h2 class="hero-role"><span data-i18n="creative">Creative</span> <span id="rotating-word">Developer</span><span class="typing-caret">|</span></h2>
+        <p class="hero-description" data-i18n="heroDescription">I turn ideas into <span class="text-gradient">colorful digital experiences.</span> Learning, building, and growing from Nepal to Japan — using code and AI to bring ideas to life.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects" data-i18n="exploreWork">Explore my work <span>↘</span></a>
+          <a class="button button-ghost" href="#contact" data-i18n="contactMe">Contact me <span>↗</span></a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GH <span>↗</span></a>
+          <a href="#contact" aria-label="Email">EMAIL <span>↗</span></a>
+          <span class="social-note" data-i18n="socialNote">Currently learning & building</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Abstract colorful creative artwork">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-glow"></div>
+        <div class="shape shape-cube"><span></span></div>
+        <div class="shape shape-ball"></div>
+        <div class="shape shape-ring"></div>
+        <div class="shape shape-small"></div>
+        <div class="art-label label-top" data-i18n="ideasReality">IDEAS → REALITY</div>
+        <div class="art-label label-bottom" data-i18n="designCode">DESIGN / CODE / CREATE</div>
+        <div class="art-sticker" data-i18n="magic">LET’S<br>MAKE<br><em>MAGIC</em> ✳</div>
+        <div class="art-cross cross-one">✳</div><div class="art-cross cross-two">✦</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> <span data-i18n="scrollExplore">SCROLL TO EXPLORE</span></a>
+      <div class="hero-index">01 / 05</div>
+    </section>
+
+    <section class="intro section-wrap section-block" id="about">
+      <div class="section-kicker" data-i18n="aboutKicker"><span>01</span> / A LITTLE ABOUT ME</div>
+      <div class="intro-grid">
+        <h2 data-i18n="aboutTitle">Curious mind.<br><span class="outline-text">Creative soul.</span><br>Building the future.</h2>
+        <div class="intro-text">
+          <p data-i18n="aboutP1">I'm Bijay, a student in Japan who loves turning ideas into websites and digital products. I’m currently growing my skills in front-end development and exploring what I can create with code.</p>
+          <p data-i18n="aboutP2">My goal is to become an IT engineer and build useful, thoughtful experiences that make people’s lives a little easier.</p>
+          <a class="text-link" href="#contact" data-i18n="moreAbout">A little more about me <span>↗</span></a>
+        </div>
+      </div>
+      <div class="marquee" aria-label="Design, build, learn, repeat"><div class="marquee-track" data-i18n="marquee">DESIGN <span>✳</span> BUILD <span>✳</span> LEARN <span>✳</span> REPEAT <span>✳</span> DESIGN <span>✳</span> BUILD <span>✳</span> LEARN <span>✳</span> REPEAT <span>✳</span></div></div>
+    </section>
+
+    <section class="skills section-wrap section-block" id="skills">
+      <div class="section-kicker" data-i18n="skillsKicker"><span>02</span> / MY TOOLKIT</div>
+      <div class="section-heading">
+        <h2 data-i18n="skillsTitle">Things I’m <span class="text-gradient">learning.</span></h2>
+        <p data-i18n="skillsDesc">Small steps every day. Strong foundations for bigger ideas.</p>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card reveal-card"><div class="skill-icon html-icon">5</div><div><h3>HTML</h3><p data-i18n="htmlDesc">The structure behind the web.</p></div><span class="card-arrow">↗</span></article>
+        <article class="skill-card reveal-card"><div class="skill-icon css-icon">✳</div><div><h3>CSS</h3><p data-i18n="cssDesc">Bringing ideas to life with style.</p></div><span class="card-arrow">↗</span></article>
+        <article class="skill-card reveal-card"><div class="skill-icon js-icon">JS</div><div><h3>JavaScript</h3><p data-i18n="jsDesc">Making websites interactive.</p></div><span class="card-arrow">↗</span></article>
+        <article class="skill-card reveal-card"><div class="skill-icon design-icon">✦</div><div><h3>UI / UX</h3><p data-i18n="uxDesc">Making experiences feel simple.</p></div><span class="card-arrow">↗</span></article>
+      </div>
+      <p class="honest-note" data-i18n="skillsNote">* Skills shown reflect my learning journey. I’m always improving.</p>
+    </section>
+
+    <section class="ai-section section-wrap section-block" id="ai">
+      <div class="section-kicker" data-i18n="aiKicker"><span>03</span> / HOW I CREATE</div>
+      <div class="ai-feature">
+        <div class="ai-feature-copy">
+          <p class="ai-overline"><span>✳</span> <span data-i18n="aiOverline">HUMAN IDEAS, AI-POWERED WORKFLOW</span></p>
+          <h2 data-i18n="aiTitle">Curiosity meets<br><span class="text-gradient">artificial intelligence.</span></h2>
+          <p data-i18n="aiDesc">I use AI as a creative partner to explore ideas, learn new technologies, troubleshoot code, and make my development workflow more productive.</p>
+          <div class="ai-tags" data-i18n="aiTags"><span>AI-assisted coding</span><span>Idea exploration</span><span>Creative workflows</span></div>
+        </div>
+        <div class="ai-feature-art" aria-hidden="true">
+          <div class="ai-feature-orbit orbit-a"></div><div class="ai-feature-orbit orbit-b"></div>
+          <div class="ai-feature-core">AI<span>✳</span></div>
+          <i class="ai-node node-a">✦</i><i class="ai-node node-b">✧</i><i class="ai-node node-c">+</i>
+          <div class="ai-art-caption" data-i18n="aiCaption">IMAGINE · LEARN · BUILD</div>
+        </div>
+      </div>
+      <p class="honest-note" data-i18n="aiNote">AI is part of my learning and creative process — I keep developing my own skills along the way.</p>
+    </section>
+
+    <section class="projects section-wrap section-block" id="projects">
+      <div class="section-kicker" data-i18n="projectsKicker"><span>04</span> / SELECTED WORK</div>
+      <div class="section-heading projects-heading">
+        <h2 data-i18n="projectsTitle">Made with <span class="text-gradient">curiosity.</span></h2>
+        <span data-i18n="projectsDesc">Websites I’ve built and published. Open each live project to explore it.</span>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-cafe reveal-card">
+          <a class="project-card-open" href="https://bijay-officials.github.io/Cafe/" target="_blank" rel="noreferrer" aria-label="Open Café Shop website">
+            <div class="project-visual cafe-visual"><div class="cafe-window"><span>喫茶</span><strong>komorebi</strong><small>COFFEE & SLOW DAYS</small></div><div class="coffee-cup">☕</div><span class="live-badge" data-i18n="liveBadge">LIVE WEBSITE ↗</span></div>
+          </a>
+          <div class="project-meta"><span data-i18n="metaWebsite1">01 / WEBSITE</span><span>HTML · CSS · JS</span></div>
+          <div class="project-title-row"><h3>Café Shop</h3><span>↗</span></div>
+          <p data-i18n="cafeDesc">A café website focused on a calm atmosphere and a responsive layout.</p>
+          <a class="project-link" href="https://bijay-officials.github.io/Cafe/" target="_blank" rel="noreferrer" data-i18n="viewLive">View live website <span>↗</span></a>
+        </article>
+        <article class="project-card project-ai reveal-card">
+          <a class="project-card-open" href="https://bijay-officials.github.io/easyshop/" target="_blank" rel="noreferrer" aria-label="Open Agrishop website">
+            <div class="project-visual shop-visual"><div class="shop-sun"></div><div class="shop-field"><i></i><i></i><i></i><i></i><i></i></div><div class="shop-wordmark"><small>GROW BETTER</small><strong>agri<span>shop</span></strong></div><span class="live-badge" data-i18n="liveBadge">LIVE WEBSITE ↗</span></div>
+          </a>
+          <div class="project-meta"><span data-i18n="metaWebsite2">02 / WEBSITE</span><span>HTML · CSS · JS</span></div>
+          <div class="project-title-row"><h3>Agrishop / EasyShop</h3><span>↗</span></div>
+          <p data-i18n="shopDesc">A shopping website concept published online as a live project.</p>
+          <a class="project-link" href="https://bijay-officials.github.io/easyshop/" target="_blank" rel="noreferrer" data-i18n="viewLive">View live website <span>↗</span></a>
+        </article>
+        <article class="project-card project-portfolio reveal-card">
+          <div class="project-visual portfolio-visual"><div class="mini-browser"><div class="browser-dots"><i></i><i></i><i></i></div><div class="mini-big">YOUR<br>NEXT<br><em>IDEA.</em></div><div class="mini-bars"><i></i><i></i><i></i></div></div></div>
+          <div class="project-meta"><span data-i18n="metaPortfolio">03 / PORTFOLIO</span><span>HTML · CSS · JS</span></div>
+          <div class="project-title-row"><h3>My Portfolio</h3><span>↗</span></div>
+          <p data-i18n="portfolioDesc">A personal corner of the internet to show my growth.</p>
+          <a class="project-link" href="#home" data-i18n="explorePortfolio">Explore this portfolio <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-wrap section-block" id="contact">
+      <div class="contact-panel">
+        <div class="contact-decoration">✳</div>
+        <div class="section-kicker" data-i18n="contactKicker"><span>05</span> / YOUR TURN</div>
+        <h2 data-i18n="contactTitle">Have an idea?<br><span class="text-gradient">Let’s make it real.</span></h2>
+        <p data-i18n="contactDesc">I’m learning, creating, and open to connecting with people who love building things.</p>
+        <a class="button button-primary" href="mailto:your-email@example.com" data-i18n="sayHello">Say hello <span>↗</span></a>
+        <div class="contact-foot"><span data-i18n="basedJapan">BASED IN JAPAN 🇯🇵</span><span data-i18n="madeCuriosity">MADE WITH CURIOSITY ✳</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">B</span><span>BIJAY<span class="brand-dot">.</span></span></a><p data-i18n="footerDesc">Learning in public. Building with purpose.</p><a href="#home" class="back-top" data-i18n="backTop">BACK TO TOP ↑</a><span class="copyright">© <span id="year"></span> BIJAY</span></footer>
+</body>
+</html>
